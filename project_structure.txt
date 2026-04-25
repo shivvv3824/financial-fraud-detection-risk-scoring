@@ -1,0 +1,38 @@
+financial-fraud-detection-risk-scoring/
+├── README.md
+├── requirements.txt
+├── project_structure.txt
+├── data/
+│   ├── raw/
+│   │   └── creditcard.csv
+│   └── processed/
+│       ├── train_processed.csv
+│       ├── valid_processed.csv
+│       ├── test_processed.csv
+│       ├── robust_scaler.joblib
+│       ├── eda_metrics.json
+│       └── scored_transactions_for_tableau.csv
+├── models/
+│   ├── logistic_regression.joblib
+│   ├── xgboost_fraud_detector.joblib
+│   ├── metrics_summary.json
+│   └── scored_test_preview.csv
+├── reports/
+│   └── figures/
+│       ├── class_distribution.png
+│       ├── fraud_trend_by_hour.png
+│       ├── amount_distribution_by_class.png
+│       ├── correlation_heatmap_selected.png
+│       ├── logistic_regression_pr_curve.png
+│       ├── logistic_regression_roc_curve.png
+│       ├── logistic_regression_confusion_matrix.png
+│       ├── xgboost_pr_curve.png
+│       ├── xgboost_roc_curve.png
+│       └── xgboost_confusion_matrix.png
+├── dashboards/
+│   └── tableau/
+│       └── fraud_analyst_triage_dashboard.twbx
+└── src/
+    ├── data_preprocessing_eda.py
+    ├── train_models.py
+    └── export_for_tableau.py

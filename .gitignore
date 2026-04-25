@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Local environment
+.DS_Store
+
+# Large/raw data (do not commit)
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.joblib
+data/processed/*.json
+
+# Model artifacts
+models/*.joblib
+models/*.csv
+models/*.json
+
+# Generated reports
+reports/figures/*.png
+
+# Keep directory scaffolding
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+!reports/figures/.gitkeep
