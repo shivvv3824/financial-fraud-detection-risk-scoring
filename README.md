@@ -226,9 +226,20 @@ pip install -r requirements.txt
 
 ### Place dataset
 
-Copy source CSV to:
+Download the dataset from Kaggle:
+
+- [Creditcard Dataset (Kaggle)](https://www.kaggle.com/datasets/nayanpatel482022/creditcard)
+
+Then place the source CSV as:
 
 `data/raw/creditcard.csv`
+
+Example (macOS/Linux):
+
+```bash
+mkdir -p data/raw
+cp "/path/to/downloaded/creditcard.csv" data/raw/creditcard.csv
+```
 
 ### Run pipeline
 
